@@ -13,3 +13,4 @@ class SGGS extends college{
 		
 	}
 }
+
