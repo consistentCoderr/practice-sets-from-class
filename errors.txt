@@ -1,0 +1,75 @@
+
+1) Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at first.myarr(first.java:12)
+	at first.main(first.java:5)
+	exception out of bound : means you have to correct the number inside for loop
+
+
+2)  practice2.java:18: error: non-static variable balance cannot be referenced from a static context
+		System.out.println(Father.balance);	//23L
+		                         ^
+
+3)  Exception in thread "main" java.lang.NullPointerException
+
+4)  practice2.java:1: error: class Father is public, should be declared in a file named Father.java
+	public class Father{
+	if we are including public then the class name should be same as that of file name
+
+5)	practice2.java:8: error: variable balance might not have been initialized
+		System.out.println(balance);	//if int balance; is inside main	
+		inside main we have not given a specific number to balance
+
+
+6)	practice3.java:19: error: illegal start of expression
+		public String getsurname(Father.obj){          //father obj
+	if we put the method or function inside main method 
+	it seems like you're trying to define a method getsurname that takes an object Father.obj as an argument in your Java code. However, the syntax you've used is incorrect. If you're trying to pass an object of type Father to the method, you don't need to specify the type again. Instead, you directly use the object reference.
+	
+	
+7) 	Exception in thread "main" java.lang.NullPointerException
+	at practice.main(practice3.java:9)
+	if we are trying to do something with a variable with null valur or try to access it then we will come accross this error but by deafault the values for int is 0 , value for String is null , value for boolean is false.
+
+8)	practice6.java:18: error: incompatible types: possible lossy conversion from double to float
+		SGGS sggs1 = new SGGS(0.3);
+		                      ^
+		we need to specify which type of number is this it should be 0.3f
+
+9)	Exception in thread "main" java.lang.StackOverflowError
+	at java.base/sun.nio.cs.UTF_8$Encoder.encodeLoop(UTF_8.java:564)
+	at java.base/java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:576)
+	
+	if we declare object inside class and not inside main function 
+	
+10) 	javac exception.java
+exception.java:6: error: incompatible types: Exception cannot be converted to Throwable
+		catch(Exception e){
+		      ^
+	if we name our class as Exception
+	
+11)	javac exception.java
+exception.java:5: error: unreported exception InterruptedException; must be caught or declared to be thrown
+			Thread.sleep(1000);
+			            ^
+exception.java:7: error: unreported exception InterruptedException; must be caught or declared to be thrown
+			Thread.sleep(3000);
+			            ^
+exception.java:10: error: unreported exception InterruptedException; must be caught or declared to be thrown
+			Thread.sleep(3000);
+			            ^
+3 errors
+it is included in try block but did not provide any catch block to handle it
+
+
+
+12)		javac exception.java
+exception.java:16: error: exception ArrayIndexOutOfBoundsException has already been caught
+		catch(ArrayIndexOutOfBoundsException e){
+		^
+exception.java:20: error: exception InterruptedException has already been caught
+		catch(InterruptedException e){
+		^
+2 errors
+
+if we declare catch(Exception e){} block at the top of the every other catch blocks
+
