@@ -1,1 +1,1 @@
-# day-1
+# everyday practice of class notes
